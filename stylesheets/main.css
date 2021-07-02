@@ -6,7 +6,7 @@
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   grid-template-areas:
   "title title"
   "header header"
@@ -29,9 +29,10 @@
 .sidebar {
   grid-area: sidebar;
   justify-self: center;
+  padding: 50px;
 }
 
 .footer {
   grid-area: footer;
-  justify-content: end;
+  justify-self: end;
 }
