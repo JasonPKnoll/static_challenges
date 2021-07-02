@@ -1,9 +1,35 @@
 * {
   margin: 0;
-  padding 0;
+  padding: 0;
 }
 
 .grid {
   display: grid;
-  grid-template-columns: 90% 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+  "title title"
+  "header header"
+  "content sidebar"
+  "footer footer";
+}
+
+.title {
+  grid-area: title;
+}
+
+.header {
+  grid-area: header;
+}
+
+.content {
+  grid-area: content;
+}
+
+.sidebar {
+  grid-area: sidebar;
+}
+
+.footer {
+  grid-area: footer;
 }
