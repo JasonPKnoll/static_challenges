@@ -28,8 +28,10 @@
 
 .sidebar {
   grid-area: sidebar;
+  justify-self: center;
 }
 
 .footer {
   grid-area: footer;
+  justify-content: end;
 }
